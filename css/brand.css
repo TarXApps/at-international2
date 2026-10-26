@@ -1,0 +1,79 @@
+/* Outfit (headings), self-hosted */
+@font-face{font-family:"Outfit";font-weight:400;font-style:normal;font-display:swap;src:url("../fonts/outfit/outfit-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Outfit";font-weight:500;font-style:normal;font-display:swap;src:url("../fonts/outfit/outfit-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Outfit";font-weight:600;font-style:normal;font-display:swap;src:url("../fonts/outfit/outfit-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Outfit";font-weight:700;font-style:normal;font-display:swap;src:url("../fonts/outfit/outfit-latin-700-normal.woff2") format("woff2")}
+/* A.T International brand layer: indigo #220A9D, blue #3537E2 (from the logo) */
+:root{--at-indigo:#220A9D;--at-blue:#3537E2;--at-deep:#0E0540;--at-mid:#1B0A7A;--at-soft:#8E93FF}
+.bg_linear_full{background-image:linear-gradient(130deg,#1B0A7A 30%,#0A0330 100%)}
+.main-header .logo img{height:50px;width:auto;max-width:none}
+.sticky-header .logo img{height:42px;width:auto}
+.mobile-menu .nav-logo img{height:40px;width:auto}
+.mobile-menu .nav-logo,.mobile-menu .upper-box{background:#fff}
+.footer-widget .logo img{height:44px;width:auto}
+.home_layout_app_4,.home_layout_app_4 .auto-container{position:relative}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--at-soft);margin-bottom:14px}
+.sec-title.text-center .eyebrow{text-align:center}
+.hero-badge{display:inline-block;padding:7px 18px;border:1px solid rgba(255,255,255,.35);border-radius:40px;font-size:14px;color:#fff;margin-bottom:22px;background:rgba(255,255,255,.08)}
+.home-details .hero-sub{max-width:640px;margin:18px auto 0;color:#E4E6FF;font-size:18px;line-height:1.6}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.theme-btn.btn-style-one,.btn-style-one{background:var(--at-blue)}
+.btn-style-two{border-color:var(--at-blue);color:var(--at-blue)}
+.hero-actions .btn-style-two{background:#fff;color:var(--at-indigo)}
+.stats-strip{padding:10px 0 70px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:26px 16px;text-align:center}
+.stat b{display:block;font-size:40px;line-height:1.1;color:#fff;font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:6px;color:#CBD0FF;font-size:15px}
+.country-block-three .flag span{display:inline-block;color:inherit}
+.country-block-three .inner-box{height:100%}
+.countries-section-4 .row>div{margin-bottom:24px;display:flex}
+.countries-section-4 .row>div>.inner-box{width:100%}
+.clients-section .quote-mark{color:var(--at-soft);font-size:26px;margin-bottom:12px}
+.clients-section .text{font-size:18px;line-height:1.6;color:#fff}
+.clients-section .title.who{margin-top:18px;margin-bottom:2px}
+.clients-section .role{color:#CBD0FF;font-size:14px}
+.enq-section{padding:30px 0 90px}
+.enq-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:48px 44px}
+.enq-card h2{color:#fff;font-size:34px;line-height:1.25;margin-bottom:12px}
+.enq-card p{color:#DDE0FF}
+.enq-lines{list-style:none;padding:0;margin:26px 0 0}
+.enq-lines li{display:flex;gap:14px;align-items:flex-start;color:#fff;margin-bottom:16px;line-height:1.5;min-width:0}
+.enq-lines i{color:var(--at-soft);width:18px;margin-top:4px;text-align:center}
+.enq-lines a,.enq-lines span{color:#fff;overflow-wrap:anywhere}
+.enq-form label{display:block;color:#E4E6FF;font-size:14px;margin:0 0 6px}
+.enq-form input,.enq-form textarea{width:100%;padding:13px 16px;border-radius:8px;border:1px solid rgba(255,255,255,.28);background:rgba(10,3,48,.55);color:#fff;font-size:16px;margin-bottom:18px}
+.enq-form input:focus,.enq-form textarea:focus{outline:2px solid var(--at-soft);outline-offset:1px}
+.enq-form .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.cf-status{margin-top:16px;color:#fff;font-size:15px}
+.cf-status.ok{color:#9CF2C0}.cf-status.err{color:#FFB4B4}
+.main-footer-app-4{background:#0E0540}
+@media (max-width:991px){.stats-grid{grid-template-columns:repeat(2,1fr)}.enq-card{padding:34px 22px}.enq-info-col{margin-bottom:30px}}
+@media (max-width:575px){.stat b{font-size:32px}.home-details h2{font-size:34px;line-height:1.2}.enq-card h2{font-size:28px}}
+/* hero + component colours aligned to the logo */
+.home_layout_app_4{padding:112px 0 560px}
+.home_layout_app_4::before{background:linear-gradient(180deg,#3A2BD8 0%,#1B0A7A 100%);opacity:1}
+.home-details .text{margin:14px 0 0;font-size:24px}
+.btn-style-one .btn-title,.theme-btn.btn-style-one .btn-title{color:#fff}
+.btn-style-one:hover{background:var(--at-indigo)}
+.country-block-three .inner-box{background-image:linear-gradient(26deg,#3537E2 0%,#1E1296 100%)}
+.accordion-box-app-4 .block .acc-btn{background:#3537E2}
+.accordion-box-app-4 .block .acc-content.current{background:#1E1296}
+.about-section-app-4 .about-block-four .icon,.about-block-four .icon{background:#3537E2}
+.eyebrow{margin-bottom:10px}
+.stats-strip{padding:40px 0 70px;position:relative;z-index:2}
+.accordion-box-app-4 .block .acc-content,.accordion-box-app-4 .block .acc-content .content{background:#1E1296}
+.clients-section .country-block-three .content{padding-left:0}
+/* line illustrations are recoloured for the dark background (light outlines, indigo fills) */
+.illus{margin:0;line-height:0;background:none;padding:0;box-shadow:none}
+.illus img{display:block;width:100%;height:auto;max-width:100%}
+.illus-hero{max-width:clamp(400px,calc((100vh - 420px) * 1.236),640px);margin:0 auto}
+.illus-card{max-width:520px;margin:0 auto}
+.about-section-app-4 .row{align-items:center}
+
+/* tighter hero text so the larger illustration still fits the first screen */
+.hero-badge{margin-bottom:14px}
+.home-details h2{line-height:1.2}
+.home-details .hero-sub{margin-top:12px}
+.hero-actions{margin-top:20px}
+.stat b,.enq-card h2{font-family:"Outfit",sans-serif}

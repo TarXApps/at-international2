@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta charset="utf-8">
+<title>A.T International | Innovating Digital Solutions for Your Business</title>
+
+<!-- Stylesheets -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="css/style.css" rel="stylesheet">
+
+
+	<link href="css/style-app4.css" rel="stylesheet">
+
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/brand.css" rel="stylesheet">
+<meta name="description" content="A.T International builds custom software, mobile apps, cloud solutions, websites and digital marketing for businesses worldwide. Based in Srinagar, Kashmir, India.">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+</head>
+
+<body
+>
+<div class="page-wrapper bg_linear_full">
+
+	<!-- Preloader -->
+<div class="preloader"></div>
+	<!-- Main Header-->
+	<header class="main-header header-style-four" id="home">
+		<!-- Header Lower -->
+		<div class="header-lower">
+			<!-- Main box -->
+			<div class="main-box">
+				<div class="logo-box">
+					<div class="logo">
+												<a href="index.php" title=""><img src="images/at-logo-white.png" alt="" title=""></a>
+					</div>
+				</div>
+
+				<!--Nav Box-->
+				<div class="nav-outer">
+
+					<nav class="nav main-menu">
+												<ul class="navigation onepage-nav">
+    <li class="current"><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#clients">Clients</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#enquiry">Contact</a></li>
+</ul>					</nav>
+					<!-- Main Menu End-->
+				</div>
+
+				<div class="outer-box">
+						<a href="tel:+916005561058" class="info-btn"><i class="icon fa fa-phone"></i><small>Call us</small><br> +91 60055 61058</a>
+
+						<!-- Mobile Nav toggler -->
+						<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+				</div>
+			</div>
+		</div>
+		<!-- End Header Lower -->
+
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+
+			<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+			<nav class="menu-box">
+				<div class="upper-box">
+					<div class="nav-logo"><a href="index.php"><img src="images/at-logo-white.png" alt="" title=""></a></div>
+					<div class="close-btn"><i class="icon fa fa-times"></i></div>
+				</div>
+
+				<ul class="navigation clearfix">
+					<!--Keep This Empty / Menu will come through Javascript-->
+				</ul>
+				<ul class="contact-list-one">
+						<li><div class="contact-info-box"><i class="icon lnr-icon-phone-handset"></i><span class="title">Call Now</span><a href="tel:+916005561058">+91 60055 61058</a></div></li>
+						<li><div class="contact-info-box"><span class="icon lnr-icon-envelope1"></span><span class="title">Send Email</span><a href="mailto:info@atinternational.online">info@atinternational.online</a></div></li>
+					</ul>
+			</nav>
+		</div><!-- End Mobile Menu -->
+
+		
+
+		<!-- Sticky Header  -->
+		<div class="sticky-header">
+			<div class="auto-container">
+				<div class="inner-container">
+					<!--Logo-->
+					<div class="logo">
+												<a href="index.php" title=""><img src="images/at-logo.png" alt="" title=""></a>
+					</div>
+
+					<!--Right Col-->
+					<div class="nav-outer">
+						<!-- Main Menu -->
+						<nav class="main-menu">
+							<div class="navbar-collapse show collapse clearfix">
+								<ul class="navigation clearfix">
+									<!--Keep This Empty / Menu will come through Javascript-->
+								</ul>
+							</div>
+						</nav><!-- Main Menu End-->
+
+						<!--Mobile Navigation Toggler-->
+						<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+					</div>
+				</div>
+			</div>
+		</div><!-- End Sticky Menu -->
+	</header>
+	<!--End Main Header -->
+
+
+
+<section id="home" class="home_layout_app_4">
+	<div class="each-object-round"></div>
+	<div class="auto-container">
+		<div class="row align-items-center"><div class="home_main col-12">
+			<div class="home-details text-center">
+				<div class="hero-badge">Trusted by 50+ Companies Worldwide</div>
+				<h2>Innovating Digital Solutions <br> for Your Business</h2>
+				<div class="text">Code. Commerce. Craft.</div>
+				<p class="hero-sub">We turn your ideas into digital products, from custom software and mobile apps to cloud solutions and digital marketing.</p>
+				<div class="hero-actions">
+					<a href="#enquiry" class="theme-btn btn-style-one"><span class="btn-title">Get Free Consultation</span></a>
+					<a href="#services" class="theme-btn btn-style-two hvr-light"><span class="btn-title">Our Services</span></a>
+				</div>
+			</div>
+		</div></div>
+	</div>
+</section><section class="client_top_laptop-4">
+	<div class="auto-container"><div class="row"><div class="image-column col-12 wow slideInUp"><div class="inner-column">
+		<figure class="illus illus-hero mb-0"><img src="images/illus-hero.png" alt="Illustration of a robotic hand holding a gear inside a workflow cycle"></figure>
+	</div></div></div></div>
+</section><section class="stats-strip"><div class="auto-container"><div class="stats-grid">
+	<div class="stat"><b>50+</b><span>Projects delivered</span></div>
+	<div class="stat"><b>6+</b><span>Years of experience</span></div>
+	<div class="stat"><b>7</b><span>Countries served</span></div>
+	<div class="stat"><b>98%</b><span>Client satisfaction</span></div>
+</div></div></section><section id="about" class="about-section-app-4">
+	<div class="auto-container"><div class="row">
+		<div class="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="600ms"><div class="inner-column">
+			<div class="sec-title"><div class="eyebrow">Who we are</div><h2 class="text-white">One team for software, apps and cloud</h2></div>
+			<div class="content-box">
+				<div class="about-block-four"><i class="icon flaticon-business-018-startup"></i><h5 class="title">Custom software and web</h5><div class="text">Web applications and enterprise systems built around how your business works.</div></div>
+				<div class="about-block-four"><i class="icon flaticon-business-038-telephone"></i><h5 class="title">Mobile apps for iOS and Android</h5><div class="text">Native and cross-platform apps your customers can install and use every day.</div></div>
+				<div class="about-block-four"><i class="icon flaticon-business-027-world"></i><h5 class="title">Cloud solutions</h5><div class="text">Scalable infrastructure and migration on AWS, Azure and Google Cloud.</div></div>
+			</div>
+		</div></div>
+		<div class="image-column offset-xl-1 col-xl-5 col-lg-5 col-md-12 col-sm-12"><div class="inner-column-app wow fadeInLeft"><div class="image-box-app text-center">
+			<figure class="illus illus-card wow fadeIn"><img src="images/illus-about1.png" alt="Illustration of a robot and a person shaking hands"></figure>
+		</div></div></div>
+	</div></div>
+</section><section class="about-section-app-4 pt-0">
+	<div class="auto-container"><div class="row">
+		<div class="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-2 wow fadeInRight" data-wow-delay="600ms"><div class="inner-column">
+			<div class="sec-title"><div class="eyebrow">Srinagar, Kashmir &middot; Serving 7 countries</div><h2 class="text-white">Your idea, delivered by one team</h2>
+			<div class="text text-white">A.T International is a digital solutions company. We work with businesses worldwide to plan, design, build and grow their digital products.</div></div>
+			<div class="content-box"><ul class="list-style-three">
+				<li>Websites designed to turn visitors into customers</li>
+				<li>Data-driven digital marketing to grow your online presence</li>
+				<li>Technology guidance to streamline your operations</li>
+			</ul></div>
+			<div class="btm-box"><a href="#enquiry" class="theme-btn btn-style-one btn-style-chnage"><span class="btn-title">Get a Quote</span></a></div>
+		</div></div>
+		<div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12"><div class="inner-column wow fadeInLeft"><div class="image-box-app">
+			<figure class="illus illus-card wow fadeIn"><img src="images/illus-about2.png" alt="Illustration of hands holding an idea, a profile and a chart"></figure>
+		</div></div></div>
+	</div></div>
+</section><section id="services" class="countries-section-4">
+	<div class="outer-box pt-0"><div class="auto-container">
+		<div class="sec-title text-center light"><div class="eyebrow">What we do</div><h2>Our Services</h2>
+		<div class="text text-white">Everything you need to take an idea online, from the first design to the cloud it runs on.</div></div>
+		<div class="row">
+<div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="flag"><a href="#enquiry"><i class="icon flaticon-business-062-diagram"></i></a></div>
+<h4 class="title"><a href="#enquiry">Software Development</a></h4><div class="text">Custom web applications and enterprise systems built around how your business works.</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="flag"><a href="#enquiry"><i class="icon flaticon-business-038-telephone"></i></a></div>
+<h4 class="title"><a href="#enquiry">Mobile App Development</a></h4><div class="text">Native and cross-platform apps for iOS and Android.</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="flag"><a href="#enquiry"><i class="icon flaticon-business-032-megaphone"></i></a></div>
+<h4 class="title"><a href="#enquiry">Digital Marketing</a></h4><div class="text">Data-driven strategies to grow your online presence and engagement.</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="flag"><a href="#enquiry"><i class="icon flaticon-business-016-world"></i></a></div>
+<h4 class="title"><a href="#enquiry">Cloud Solutions</a></h4><div class="text">Scalable infrastructure and migration for AWS, Azure and Google Cloud.</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="flag"><a href="#enquiry"><i class="icon flaticon-business-026-pencil"></i></a></div>
+<h4 class="title"><a href="#enquiry">Web Design</a></h4><div class="text">Responsive websites designed to turn visitors into customers.</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="flag"><a href="#enquiry"><i class="icon flaticon-business-036-idea"></i></a></div>
+<h4 class="title"><a href="#enquiry">IT Consulting</a></h4><div class="text">Technology guidance to support your decisions and streamline operations.</div></div></div></div>
+		</div>
+	</div></div>
+</section><section id="clients" class="countries-section-4 clients-section">
+	<div class="outer-box pt-0"><div class="auto-container">
+		<div class="sec-title text-center light"><div class="eyebrow">Clients</div><h2>What Our Clients Say</h2></div>
+		<div class="row">
+<div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="quote-mark"><i class="fa fa-quote-left"></i></div>
+<div class="text">&ldquo;A custom ERP system that improved our efficiency by 40%.&rdquo;</div><h4 class="title who">Priya Sharma</h4><div class="role">CEO, TechStart Inc.</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="quote-mark"><i class="fa fa-quote-left"></i></div>
+<div class="text">&ldquo;The mobile app crossed 10k downloads and holds a 4.3-star rating.&rdquo;</div><h4 class="title who">Abdullah Musallem</h4><div class="role">HoC, UTAS, Oman</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="quote-mark"><i class="fa fa-quote-left"></i></div>
+<div class="text">&ldquo;We saw a 150% ROI within six months of the digital marketing work.&rdquo;</div><h4 class="title who">Ahmed Al Barwani</h4><div class="role">Marketing Director, OmCore</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<div class="quote-mark"><i class="fa fa-quote-left"></i></div>
+<div class="text">&ldquo;Their commitment to quality and on-time delivery stands out.&rdquo;</div><h4 class="title who">Vikram Singh</h4><div class="role">Founder, GeeMaa</div></div></div></div>
+		</div>
+	</div></div>
+</section><section id="faq" class="faq-section-app-4 pt-0">
+	<div class="auto-container">
+		<div class="sec-title-app text-center mb-60"><h2 class="text-white">Frequently Asked <br> Questions</h2></div>
+		<div class="row justify-content-center"><div class="faq-column col-lg-8 col-md-12 col-sm-12">
+			<ul class="accordion-box-app accordion-box-app-4 wow fadeInRight">
+<li class="accordion block active-block"><div class="acc-btn border-0 active">What services does A.T International offer?<div class="icon fa fa-plus"></div></div><div class="acc-content current"><div class="content"><div class="text">Software development, mobile app development, digital marketing, cloud solutions, web design and IT consulting.</div></div></div></li><li class="accordion block"><div class="acc-btn border-0">Where are you based, and who do you work with?<div class="icon fa fa-plus"></div></div><div class="acc-content"><div class="content"><div class="text">We are based in Srinagar, Kashmir, India, and have delivered 50+ projects for companies in 7 countries.</div></div></div></li><li class="accordion block"><div class="acc-btn border-0">Do you build apps for both iOS and Android?<div class="icon fa fa-plus"></div></div><div class="acc-content"><div class="content"><div class="text">Yes. We build native and cross-platform mobile apps for iOS and Android.</div></div></div></li><li class="accordion block"><div class="acc-btn border-0">How do I get started?<div class="icon fa fa-plus"></div></div><div class="acc-content"><div class="content"><div class="text">Request a free consultation using the form below, or call +91 60055 61058. Tell us about your idea and we will get back to you.</div></div></div></li>
+			</ul>
+		</div></div>
+	</div>
+</section><section id="enquiry" class="enq-section">
+	<div class="auto-container"><div class="enq-card"><div class="row">
+		<div class="col-lg-5 col-md-12 enq-info-col">
+			<div class="eyebrow">Get in touch</div>
+			<h2>Ready to Transform Your Business?</h2>
+			<p>Tell us about your project and ask for a free consultation.</p>
+			<ul class="enq-lines">
+				<li><i class="fa fa-phone"></i><a href="tel:+916005561058">+91 60055 61058</a></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:info@atinternational.online">info@atinternational.online</a></li>
+				<li><i class="fa fa-map-marker-alt"></i><span>Sector C, Baghi Hyder, Hyderpora, Bye Pass, Srinagar, Kashmir-190005</span></li>
+			</ul>
+		</div>
+		<div class="col-lg-7 col-md-12">
+			<form id="contact-form" class="enq-form" method="post" action="contact.php" novalidate>
+				<div class="row">
+					<div class="col-md-6"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" required autocomplete="name"></div>
+					<div class="col-md-6"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" required autocomplete="email"></div>
+					<div class="col-12"><label for="cf-phone">Phone (optional)</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
+					<div class="col-12"><label for="cf-msg">How can we help?</label><textarea id="cf-msg" name="message" rows="4" required></textarea></div>
+					<div class="col-12 hp"><label for="cf-web">Leave this empty</label><input id="cf-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+					<div class="col-12"><button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Get Free Consultation</span></button><div id="cf-status" class="cf-status" role="status" aria-live="polite"></div></div>
+				</div>
+			</form>
+		</div>
+	</div></div></div>
+</section>
+
+	<footer class="main-footer-app-4">
+		<div class="widgets-section"><div class="auto-container"><div class="row">
+			<div class="footer-column col-xl-4 col-lg-12 col-md-6 col-sm-12"><div class="footer-widget about-widget">
+				<div class="logo"><a href="#home"><img src="images/at-logo-white.png" alt="A.T International"></a></div>
+				<div class="text">Innovating digital solutions for your business. Software, mobile apps, cloud, web design and digital marketing from Srinagar, Kashmir.</div>
+			</div></div>
+			<div class="footer-column col-xl-2 col-lg-4 col-md-6 col-sm-12"><div class="footer-widget"><h3 class="widget-title">Company</h3>
+				<ul class="user-links"><li><a href="#about">About Us</a></li><li><a href="#clients">Clients</a></li><li><a href="#faq">FAQ</a></li><li><a href="#enquiry">Contact</a></li></ul>
+			</div></div>
+			<div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12"><div class="footer-widget"><h3 class="widget-title">Services</h3>
+				<ul class="user-links"><li><a href="#services">Software Development</a></li><li><a href="#services">Mobile App Development</a></li><li><a href="#services">Digital Marketing</a></li><li><a href="#services">Cloud Solutions</a></li></ul>
+			</div></div>
+			<div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12"><div class="footer-widget contact-widget-app-4"><h3 class="widget-title">Contact</h3><div class="widget-content">
+				<div class="text">Sector C, Baghi Hyder, Hyderpora, Bye Pass, Srinagar, Kashmir-190005</div>
+				<ul class="contact-info">
+					<li><i class="fa fa-envelope"></i> <a href="mailto:info@atinternational.online">info@atinternational.online</a><br></li>
+					<li><i class="fa fa-phone-square"></i> <a href="tel:+916005561058">+91 60055 61058</a><br></li>
+				</ul>
+			</div></div></div>
+		</div></div></div>
+		<div class="footer-bottom"><div class="auto-container"><div class="inner-container" style="background: #12093F;">
+			<div class="copyright-text text-white">&copy; 2026 A.T International. All rights reserved.</div>
+		</div></div></div>
+	</footer>
+
+</div><!-- End Page Wrapper -->
+
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/mixitup.js"></script>
+<script src="js/bxslider.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/script.js"></script>
+<script>
+(function(){
+  var f=document.getElementById('contact-form'),s=document.getElementById('cf-status');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=f.name.value.trim(),m=f.email.value.trim(),t=f.message.value.trim();
+    if(!n||!/^\S+@\S+\.\S+$/.test(m)||!t){s.textContent='Please enter your name, a valid email and a message.';s.className='cf-status err';return;}
+    s.textContent='Sending...';s.className='cf-status';
+    fetch('contact.php',{method:'POST',body:new FormData(f)}).then(function(r){return r.json();}).then(function(j){
+      if(j&&j.ok){s.textContent='Thank you. We have received your message and will get back to you soon.';s.className='cf-status ok';f.reset();}
+      else throw new Error();
+    }).catch(function(){s.textContent='The message could not be sent. Please email info@atinternational.online or call +91 60055 61058.';s.className='cf-status err';});
+  });
+})();
+</script>
+</body>
+</html>
