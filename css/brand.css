@@ -77,3 +77,10 @@
 .home-details .hero-sub{margin-top:12px}
 .hero-actions{margin-top:20px}
 .stat b,.enq-card h2{font-family:"Outfit",sans-serif}
+
+/* Preloader: A.T International logo instead of template logo */
+.preloader{background-color:#fff}
+.preloader:after{
+  width:240px;height:40px;margin-left:-120px;margin-top:-30px;
+  background-image:url(../images/at-logo.png);background-size:contain;
+}
