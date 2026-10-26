@@ -234,7 +234,7 @@
 			<ul class="enq-lines">
 				<li><i class="fa fa-phone"></i><a href="tel:+916005561058">+91 60055 61058</a></li>
 				<li><i class="fa fa-envelope"></i><a href="mailto:info@atinternational.online">info@atinternational.online</a></li>
-				<li><i class="fa fa-map-marker-alt"></i><span>Sector C, Baghi Hyder, Hyderpora, Bye Pass, Srinagar, Kashmir-190005</span></li>
+				<li><i class="fa fa-map-marker-alt"></i><span>Srinagar, Kashmir, India</span></li>
 			</ul>
 		</div>
 		<div class="col-lg-7 col-md-12">
@@ -265,7 +265,7 @@
 				<ul class="user-links"><li><a href="#services">Software Development</a></li><li><a href="#services">Mobile App Development</a></li><li><a href="#services">Digital Marketing</a></li><li><a href="#services">Cloud Solutions</a></li></ul>
 			</div></div>
 			<div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12"><div class="footer-widget contact-widget-app-4"><h3 class="widget-title">Contact</h3><div class="widget-content">
-				<div class="text">Sector C, Baghi Hyder, Hyderpora, Bye Pass, Srinagar, Kashmir-190005</div>
+				<div class="text">Srinagar, Kashmir, India</div>
 				<ul class="contact-info">
 					<li><i class="fa fa-envelope"></i> <a href="mailto:info@atinternational.online">info@atinternational.online</a><br></li>
 					<li><i class="fa fa-phone-square"></i> <a href="tel:+916005561058">+91 60055 61058</a><br></li>
