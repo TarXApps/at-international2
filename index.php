@@ -175,9 +175,10 @@
 				<li>Data-driven digital marketing to grow your online presence</li>
 				<li>Technology guidance to streamline your operations</li>
 			</ul></div>
+			<figure class="illus illus-card illus-mobile"><img src="images/illus-about2.png" alt="Illustration of hands holding an idea, a profile and a chart"></figure>
 			<div class="btm-box"><a href="#enquiry" class="theme-btn btn-style-one btn-style-chnage"><span class="btn-title">Get a Quote</span></a></div>
 		</div></div>
-		<div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12"><div class="inner-column wow fadeInLeft"><div class="image-box-app">
+		<div class="image-column illus-desktop col-xl-6 col-lg-5 col-md-12 col-sm-12"><div class="inner-column wow fadeInLeft"><div class="image-box-app">
 			<figure class="illus illus-card wow fadeIn"><img src="images/illus-about2.png" alt="Illustration of hands holding an idea, a profile and a chart"></figure>
 		</div></div></div>
 	</div></div>

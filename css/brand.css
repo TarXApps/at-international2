@@ -84,3 +84,11 @@
   width:240px;height:40px;margin-left:-120px;margin-top:-30px;
   background-image:url(../images/at-logo.png);background-size:contain;
 }
+
+/* Third illustration: on mobile it sits between the bullet list and "Get a Quote" */
+.illus-mobile{display:none}
+@media (max-width:991px){
+  .illus-desktop{display:none}
+  .illus-mobile{display:block;margin:28px auto 8px}
+  .about-section-app-4 .content-column.order-2{order:0}
+}
