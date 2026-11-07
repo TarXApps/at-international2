@@ -209,17 +209,17 @@
 		<div class="text text-white">A selection of products we have designed, built and launched.</div></div>
 		<div class="row">
 <div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://www.smdsummit2026.in/" target="_blank" rel="noopener">
-<div class="port-thumb"><span>S</span></div>
+<div class="port-thumb"><img src="images/portfolio/smd-summit.jpg" alt="Screenshot of the SMD Summit 2026 website" loading="lazy"></div>
 <div class="port-body"><div class="port-tag">Event website</div><h4 class="port-title">SMD Summit 2026</h4><div class="port-desc">Sustainable Mountain Development Summit, Srinagar</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://digitalfinds.live/" target="_blank" rel="noopener">
-<div class="port-thumb"><span>D</span></div>
+<div class="port-thumb"><img src="images/portfolio/digitalfinds.jpg" alt="Screenshot of the Digital Finds website" loading="lazy"></div>
 <div class="port-body"><div class="port-tag">Digital products store</div><h4 class="port-title">Digital Finds</h4><div class="port-desc">Printable planner templates with instant PDF download</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://digitalfinds.website/" target="_blank" rel="noopener">
-<div class="port-thumb"><span>D</span></div>
+<div class="port-thumb"><img src="images/portfolio/digitalfinds-guide.jpg" alt="Screenshot of the DigitalFinds Guide website" loading="lazy"></div>
 <div class="port-body"><div class="port-tag">Content &amp; affiliate</div><h4 class="port-title">DigitalFinds Guide</h4><div class="port-desc">Reviewed courses, exam prep, tools and books</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://shopyfair.in/" target="_blank" rel="noopener">
-<div class="port-thumb"><span>S</span></div>
+<div class="port-thumb"><img src="images/portfolio/shopyfair.jpg" alt="Screenshot of the ShopyFair website" loading="lazy"></div>
 <div class="port-body"><div class="port-tag">E-commerce</div><h4 class="port-title">ShopyFair</h4><div class="port-desc">Cash-on-delivery store for Islamic essentials</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://shopyfair.co.in/" target="_blank" rel="noopener">
-<div class="port-thumb"><span>S</span></div>
+<div class="port-thumb"><img src="images/portfolio/shopyfair-foods.jpg" alt="Screenshot of the ShopyFair Foods website" loading="lazy"></div>
 <div class="port-body"><div class="port-tag">E-commerce</div><h4 class="port-title">ShopyFair Foods</h4><div class="port-desc">Honey, saffron, spices and dry fruits</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://hiringbot.online/" target="_blank" rel="noopener">
-<div class="port-thumb"><span>H</span></div>
+<div class="port-thumb"><img src="images/portfolio/hiringbot.jpg" alt="Screenshot of the HiringBot website" loading="lazy"></div>
 <div class="port-body"><div class="port-tag">AI SaaS</div><h4 class="port-title">HiringBot</h4><div class="port-desc">AI-powered resume and job-application tool</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div>
 		</div>
 	</div></div>
