@@ -92,3 +92,20 @@
   .illus-mobile{display:block;margin:28px auto 8px}
   .about-section-app-4 .content-column.order-2{order:0}
 }
+
+/* Portfolio */
+.portfolio-section .row>div{margin-bottom:24px;display:flex}
+.port-card{display:flex;flex-direction:column;width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden;color:#fff;text-decoration:none;transition:transform .25s,border-color .25s,background .25s}
+.port-card:hover{transform:translateY(-4px);border-color:var(--at-soft);background:rgba(255,255,255,.11);color:#fff}
+.port-thumb{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#3537E2 0%,#1E1296 100%);overflow:hidden}
+.port-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.port-thumb span{font-family:"Outfit",sans-serif;font-size:64px;font-weight:700;color:rgba(255,255,255,.35)}
+.port-body{padding:22px 24px 24px}
+.port-tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--at-soft);margin-bottom:8px}
+.port-title{font-family:"Outfit",sans-serif;color:#fff;font-size:22px;margin:0 0 14px}
+.port-link{color:#CBD0FF;font-size:15px}
+.port-link i{margin-left:6px;font-size:12px;transition:transform .2s}
+.port-card:hover .port-link i{transform:translateX(4px)}
+.port-desc{color:#DDE0FF;font-size:15px;line-height:1.5;margin:-6px 0 16px}
+.port-body{flex:1;display:flex;flex-direction:column}
+.port-link{margin-top:auto}

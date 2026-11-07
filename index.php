@@ -55,6 +55,7 @@
     <li class="current"><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
     <li><a href="#clients">Clients</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#enquiry">Contact</a></li>
@@ -200,6 +201,26 @@
 <h4 class="title"><a href="#enquiry">Web Design</a></h4><div class="text">Responsive websites designed to turn visitors into customers.</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
 <div class="flag"><a href="#enquiry"><i class="icon flaticon-business-036-idea"></i></a></div>
 <h4 class="title"><a href="#enquiry">IT Consulting</a></h4><div class="text">Technology guidance to support your decisions and streamline operations.</div></div></div></div>
+		</div>
+	</div></div>
+</section><section id="portfolio" class="countries-section-4 portfolio-section">
+	<div class="outer-box pt-0"><div class="auto-container">
+		<div class="sec-title text-center light"><div class="eyebrow">Our Work</div><h2>Recent Projects</h2>
+		<div class="text text-white">A selection of products we have designed, built and launched.</div></div>
+		<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://www.smdsummit2026.in/" target="_blank" rel="noopener">
+<div class="port-thumb"><span>S</span></div>
+<div class="port-body"><div class="port-tag">Event website</div><h4 class="port-title">SMD Summit 2026</h4><div class="port-desc">Sustainable Mountain Development Summit, Srinagar</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://digitalfinds.live/" target="_blank" rel="noopener">
+<div class="port-thumb"><span>D</span></div>
+<div class="port-body"><div class="port-tag">Digital products store</div><h4 class="port-title">Digital Finds</h4><div class="port-desc">Printable planner templates with instant PDF download</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://digitalfinds.website/" target="_blank" rel="noopener">
+<div class="port-thumb"><span>D</span></div>
+<div class="port-body"><div class="port-tag">Content &amp; affiliate</div><h4 class="port-title">DigitalFinds Guide</h4><div class="port-desc">Reviewed courses, exam prep, tools and books</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://shopyfair.in/" target="_blank" rel="noopener">
+<div class="port-thumb"><span>S</span></div>
+<div class="port-body"><div class="port-tag">E-commerce</div><h4 class="port-title">ShopyFair</h4><div class="port-desc">Cash-on-delivery store for Islamic essentials</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://shopyfair.co.in/" target="_blank" rel="noopener">
+<div class="port-thumb"><span>S</span></div>
+<div class="port-body"><div class="port-tag">E-commerce</div><h4 class="port-title">ShopyFair Foods</h4><div class="port-desc">Honey, saffron, spices and dry fruits</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div><div class="col-lg-4 col-md-6 col-sm-12"><a class="port-card" href="https://hiringbot.online/" target="_blank" rel="noopener">
+<div class="port-thumb"><span>H</span></div>
+<div class="port-body"><div class="port-tag">AI SaaS</div><h4 class="port-title">HiringBot</h4><div class="port-desc">AI-powered resume and job-application tool</div><div class="port-link">View project <i class="fa fa-arrow-right"></i></div></div></a></div>
 		</div>
 	</div></div>
 </section><section id="clients" class="countries-section-4 clients-section">
