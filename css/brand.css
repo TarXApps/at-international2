@@ -153,3 +153,40 @@
   .main-header .logo-box{flex:0 1 auto;min-width:0}
   .main-header .outer-box{margin-left:auto}
 }
+
+/* Footer link + form consent line */
+.legal-link,.enq-consent a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.legal-link:hover,.enq-consent a:hover{color:var(--at-soft)}
+.legal-sep{opacity:.5;margin:0 6px}
+.enq-consent{margin:14px 0 0;font-size:13px;line-height:1.5;color:#CBD0FF}
+
+/* Privacy policy page */
+.legal-header{padding:22px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.legal-header-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.legal-logo img{height:44px;width:auto;display:block;max-width:100%}
+.legal-main{padding:56px 0 80px}
+.legal-card{max-width:860px;margin:0 auto;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:48px 52px;color:#E4E6FF;font-size:17px;line-height:1.75}
+.legal-card h1{font-family:"Outfit",sans-serif;color:#fff;font-size:44px;line-height:1.15;margin:0 0 8px}
+.legal-card h2{font-family:"Outfit",sans-serif;color:#fff;font-size:24px;line-height:1.3;margin:38px 0 10px}
+.legal-card p{margin:0 0 14px}
+.legal-card ul{margin:0 0 14px;padding-left:22px}
+.legal-card li{margin-bottom:8px}
+.legal-card a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.legal-card a:hover{color:var(--at-soft)}
+.legal-card strong{color:#fff;font-weight:600}
+.legal-meta{color:#CBD0FF;font-size:15px;margin-bottom:26px}
+.legal-footer{border-top:1px solid rgba(255,255,255,.12);padding:22px 0;color:#CBD0FF;font-size:15px}
+.legal-footer .auto-container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.legal-footer a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:767px){
+  .legal-main{padding:34px 0 56px}
+  .legal-card{padding:28px 20px;font-size:16px;border-radius:12px}
+  .legal-card h1{font-size:34px}
+  .legal-card h2{font-size:21px;margin-top:30px}
+  .legal-logo img{height:32px}
+  .legal-back{padding:12px 18px}
+}
+.legal-card p,.legal-card li{color:#E4E6FF}
+.legal-card .legal-meta{color:#CBD0FF}
+.legal-card strong{color:#fff}
+.legal-card ul{list-style:disc}.legal-card li::marker{color:#8E93FF}

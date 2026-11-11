@@ -267,7 +267,7 @@
 					<div class="col-12"><label for="cf-phone">Phone (optional)</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
 					<div class="col-12"><label for="cf-msg">How can we help?</label><textarea id="cf-msg" name="message" rows="4" required></textarea></div>
 					<div class="col-12 hp"><label for="cf-web">Leave this empty</label><input id="cf-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
-					<div class="col-12"><button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Get Free Consultation</span></button><div id="cf-status" class="cf-status" role="status" aria-live="polite"></div></div>
+					<div class="col-12"><button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Get Free Consultation</span></button><div id="cf-status" class="cf-status" role="status" aria-live="polite"></div><p class="enq-consent">By sending this form you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p></div>
 				</div>
 			</form>
 		</div>
@@ -281,7 +281,7 @@
 				<div class="text">Innovating digital solutions for your business. Software, mobile apps, cloud, web design and digital marketing from Srinagar, Kashmir.</div>
 			</div></div>
 			<div class="footer-column col-xl-2 col-lg-4 col-md-6 col-sm-12"><div class="footer-widget"><h3 class="widget-title">Company</h3>
-				<ul class="user-links"><li><a href="#about">About Us</a></li><li><a href="#clients">Clients</a></li><li><a href="#faq">FAQ</a></li><li><a href="#enquiry">Contact</a></li></ul>
+				<ul class="user-links"><li><a href="#about">About Us</a></li><li><a href="#clients">Clients</a></li><li><a href="#faq">FAQ</a></li><li><a href="#enquiry">Contact</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li></ul>
 			</div></div>
 			<div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12"><div class="footer-widget"><h3 class="widget-title">Services</h3>
 				<ul class="user-links"><li><a href="#services">Software Development</a></li><li><a href="#services">Mobile App Development</a></li><li><a href="#services">Digital Marketing</a></li><li><a href="#services">Cloud Solutions</a></li></ul>
@@ -295,7 +295,7 @@
 			</div></div></div>
 		</div></div></div>
 		<div class="footer-bottom"><div class="auto-container"><div class="inner-container" style="background: #12093F;">
-			<div class="copyright-text text-white">&copy; 2026 A.T International. All rights reserved.</div>
+			<div class="copyright-text text-white">&copy; 2026 A.T International. All rights reserved. <span class="legal-sep">|</span> <a class="legal-link" href="privacy-policy.html">Privacy Policy</a></div>
 		</div></div></div>
 	</footer>
 
