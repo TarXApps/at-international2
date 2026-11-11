@@ -64,7 +64,7 @@
 				</div>
 
 				<div class="outer-box">
-						<a href="tel:+916005561058" class="info-btn"><i class="icon fa fa-phone"></i><small>Call us</small><br> +91 60055 61058</a>
+						<a href="tel:+916005561058" class="info-btn"><i class="icon fa fa-phone"></i><span class="ph-txt"><small>Call us</small><b>+91 60055 61058</b></span></a>
 
 						<!-- Mobile Nav toggler -->
 						<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>

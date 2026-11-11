@@ -109,3 +109,47 @@
 .port-desc{color:#DDE0FF;font-size:15px;line-height:1.5;margin:-6px 0 16px}
 .port-body{flex:1;display:flex;flex-direction:column}
 .port-link{margin-top:auto}
+
+/* Header: keep the 7-item menu and phone block on one line at every desktop width */
+.main-header .main-box{flex-wrap:nowrap;gap:16px}
+.main-header .main-box .nav-outer{flex:1 1 auto;min-width:0;width:auto;justify-content:center}
+.main-menu .navigation{display:flex;flex-wrap:nowrap;align-items:center}
+.main-menu .navigation>li{float:none;white-space:nowrap;flex:0 0 auto}
+.main-menu .navigation>li>a{white-space:nowrap}
+.main-header .logo-box{flex:0 0 auto}
+.main-header .outer-box{flex:0 0 auto}
+.main-header .outer-box .info-btn{display:inline-flex;align-items:center;gap:12px;white-space:nowrap;line-height:1.2;text-align:left}
+.main-header .outer-box .info-btn .icon{flex:0 0 auto}
+.main-header .outer-box .info-btn .ph-txt{display:flex;flex-direction:column;align-items:flex-start}
+.main-header .outer-box .info-btn small{display:block;margin:0 0 3px;font-size:13px;opacity:.85;color:#fff}
+.main-header .outer-box .info-btn b{font-weight:600;font-size:16px;color:#fff}
+@media (max-width:1599px){.main-menu .navigation>li{margin-right:40px}}
+@media (max-width:1399px){
+  .main-menu .navigation>li{margin-right:30px}
+  .main-header .logo img{height:44px}
+}
+@media (max-width:1279px){
+  .main-menu .navigation>li{margin-right:22px}
+  .main-menu .navigation>li>a{font-size:15px}
+  .main-header .logo img{height:40px}
+  .main-header .outer-box .info-btn{font-size:14px}
+}
+@media (max-width:1279px){.main-header .outer-box .info-btn b{font-size:15px}}
+@media (max-width:1199px){
+  .main-header .main-box{gap:10px}
+  .main-menu .navigation>li{margin-right:16px}
+  .main-menu .navigation>li>a{font-size:14px}
+  .main-header .logo img{height:34px}
+  .main-header .outer-box .info-btn small{display:none}
+  .main-header .outer-box .info-btn b{font-size:14px}
+}
+@media (max-width:1099px){
+  .main-header .outer-box .info-btn b{display:none}
+  .main-menu .navigation>li{margin-right:14px}
+}
+@media (max-width:767px){
+  .main-header .main-box{gap:8px}
+  .main-header .logo img{height:32px;max-width:100%}
+  .main-header .logo-box{flex:0 1 auto;min-width:0}
+  .main-header .outer-box{margin-left:auto}
+}
