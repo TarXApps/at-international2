@@ -1,5 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/sites/21b/7/744ac605f8/public_html/
-    - /bin/cp -R css fonts images js index.php privacy-policy.html contact.php feedback.html feedback-submit.php feedback-review.php feedback-lib.php favicon.ico .htaccess $DEPLOYPATH
+    - /bin/true
