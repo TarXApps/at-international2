@@ -2,6 +2,6 @@ DirectoryIndex index.php index.html
 
 # Keep Git/housekeeping files private
 RedirectMatch 404 /\.git
-<FilesMatch "^(README\.md|\.gitignore|\.cpanel\.yml)$">
+<FilesMatch "^(README\.md|\.gitignore|\.cpanel\.yml|feedback-lib\.php)$">
   Require all denied
 </FilesMatch>

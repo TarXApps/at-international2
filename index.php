@@ -227,7 +227,7 @@
 	<div class="outer-box pt-0"><div class="auto-container">
 		<div class="sec-title text-center light"><div class="eyebrow">Clients</div><h2>What Our Clients Say</h2></div>
 		<div class="row">
-<div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
+<?php if (@include_once __DIR__.'/feedback-lib.php') { at_render_testimonials(json_decode('[["Priya Sharma", "CEO, TechStart Inc.", "A custom ERP system that improved our efficiency by 40%."], ["Abdullah Musallem", "HoC, UTAS, Oman", "The mobile app crossed 10k downloads and holds a 4.3-star rating."], ["Ahmed Al Barwani", "Marketing Director, OmCore", "We saw a 150% ROI within six months of the digital marketing work."], ["Vikram Singh", "Founder, GeeMaa", "Their commitment to quality and on-time delivery stands out."]]', true), 6); } else { ?><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
 <div class="quote-mark"><i class="fa fa-quote-left"></i></div>
 <div class="text">&ldquo;A custom ERP system that improved our efficiency by 40%.&rdquo;</div><h4 class="title who">Priya Sharma</h4><div class="role">CEO, TechStart Inc.</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
 <div class="quote-mark"><i class="fa fa-quote-left"></i></div>
@@ -235,8 +235,9 @@
 <div class="quote-mark"><i class="fa fa-quote-left"></i></div>
 <div class="text">&ldquo;We saw a 150% ROI within six months of the digital marketing work.&rdquo;</div><h4 class="title who">Ahmed Al Barwani</h4><div class="role">Marketing Director, OmCore</div></div></div></div><div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">
 <div class="quote-mark"><i class="fa fa-quote-left"></i></div>
-<div class="text">&ldquo;Their commitment to quality and on-time delivery stands out.&rdquo;</div><h4 class="title who">Vikram Singh</h4><div class="role">Founder, GeeMaa</div></div></div></div>
+<div class="text">&ldquo;Their commitment to quality and on-time delivery stands out.&rdquo;</div><h4 class="title who">Vikram Singh</h4><div class="role">Founder, GeeMaa</div></div></div></div><?php } ?>
 		</div>
+		<div class="text-center fb-cta"><a href="feedback.html">Worked with us? Share your feedback <i class="fa fa-arrow-right"></i></a></div>
 	</div></div>
 </section><section id="faq" class="faq-section-app-4 pt-0">
 	<div class="auto-container">

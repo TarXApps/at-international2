@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta charset="utf-8">
+<title>Share Your Feedback | A.T International</title>
+
+<!-- Stylesheets -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="css/style.css" rel="stylesheet">
+
+
+	<link href="css/style-app4.css" rel="stylesheet">
+
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/brand.css" rel="stylesheet">
+<meta name="description" content="Worked with A.T International? Share your feedback with us.">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+<meta name="robots" content="noindex,nofollow">
+</head>
+
+<body class="legal-page" style="background:#0A0330">
+<div class="page-wrapper bg_linear_full">
+<header class="legal-header"><div class="auto-container legal-header-in">
+  <a class="legal-logo" href="index.php"><img src="images/at-logo-white.png" alt="A.T International"></a>
+  <a class="theme-btn btn-style-one legal-back" href="index.php"><span class="btn-title">Back to home</span></a>
+</div></header>
+
+<main class="legal-main"><div class="auto-container"><article class="legal-card fb-card">
+  <div class="eyebrow">Client feedback</div>
+  <h1>Share your feedback</h1>
+  <p>Thank you for working with A.T International. Tell us about your experience in a few sentences. We read every message, and with your permission we may show it in the &ldquo;What Our Clients Say&rdquo; section of our website after we review it.</p>
+
+  <form id="fb-form" class="enq-form fb-form" method="post" action="feedback-submit.php" novalidate>
+    <div class="row">
+      <div class="col-md-6"><label for="fb-name">Your name</label><input id="fb-name" name="name" type="text" maxlength="80" required autocomplete="name"></div>
+      <div class="col-md-6"><label for="fb-role">Role and company (optional)</label><input id="fb-role" name="role" type="text" maxlength="100" placeholder="e.g. Founder, Example Ltd" autocomplete="organization-title"></div>
+      <div class="col-12"><label for="fb-email">Email <span class="fb-hint">(private, never shown on the website)</span></label><input id="fb-email" name="email" type="email" required autocomplete="email"></div>
+      <div class="col-12"><label for="fb-msg">Your feedback</label><textarea id="fb-msg" name="message" rows="6" maxlength="600" required placeholder="What was it like working with us? What did we deliver?"></textarea><div class="fb-count"><span id="fb-n">0</span> / 600</div></div>
+      <div class="col-12 hp"><label for="fb-web">Leave this empty</label><input id="fb-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <input type="hidden" name="ts" id="fb-ts" value="">
+      <div class="col-12"><label class="fb-check"><input type="checkbox" name="consent" value="1" required> <span>I agree that A.T International may publish my name, role and feedback on its website after review. I understand my email stays private. See the <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span></label></div>
+      <div class="col-12"><button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Send feedback</span></button><div id="fb-status" class="cf-status" role="status" aria-live="polite"></div></div>
+    </div>
+  </form>
+</article></div></main>
+
+<footer class="legal-footer"><div class="auto-container">
+  <span>&copy; 2026 A.T International. All rights reserved.</span>
+  <span><a href="index.php">Home</a> <span class="legal-sep">|</span> <a href="privacy-policy.html">Privacy Policy</a></span>
+</div></footer>
+</div>
+<script>
+(function(){
+  var f=document.getElementById('fb-form'),s=document.getElementById('fb-status'),m=document.getElementById('fb-msg'),n=document.getElementById('fb-n');
+  document.getElementById('fb-ts').value=Date.now();
+  m.addEventListener('input',function(){n.textContent=m.value.length;});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=f.name.value.trim(),email=f.email.value.trim(),msg=f.message.value.trim();
+    if(name.length<2){s.textContent='Please enter your name.';s.className='cf-status err';return;}
+    if(!/^\S+@\S+\.\S+$/.test(email)){s.textContent='Please enter a valid email address.';s.className='cf-status err';return;}
+    if(msg.length<20){s.textContent='Please write at least a couple of sentences.';s.className='cf-status err';return;}
+    if(!f.consent.checked){s.textContent='Please tick the box to let us publish your feedback.';s.className='cf-status err';return;}
+    s.textContent='Sending...';s.className='cf-status';
+    fetch('feedback-submit.php',{method:'POST',body:new FormData(f)}).then(function(r){return r.json().catch(function(){return {ok:false};});}).then(function(j){
+      if(j&&j.ok){f.reset();n.textContent='0';document.getElementById('fb-ts').value=Date.now();s.textContent='Thank you! Your feedback has been sent to our team. We will review it before anything is published.';s.className='cf-status ok';}
+      else{s.textContent=(j&&j.error)||'Your feedback could not be sent. Please email info@atinternational.online.';s.className='cf-status err';}
+    }).catch(function(){s.textContent='Your feedback could not be sent. Please email info@atinternational.online.';s.className='cf-status err';});
+  });
+})();
+</script>
+</body>
+</html>
