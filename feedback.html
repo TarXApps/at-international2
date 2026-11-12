@@ -46,11 +46,12 @@
     <div class="row">
       <div class="col-md-6"><label for="fb-name">Your name</label><input id="fb-name" name="name" type="text" maxlength="80" required autocomplete="name"></div>
       <div class="col-md-6"><label for="fb-role">Role and company (optional)</label><input id="fb-role" name="role" type="text" maxlength="100" placeholder="e.g. Founder, Example Ltd" autocomplete="organization-title"></div>
+      <div class="col-12"><label for="fb-li">LinkedIn profile <span class="fb-hint">(optional, shown as a link next to your feedback)</span></label><input id="fb-li" name="linkedin" type="text" maxlength="200" placeholder="linkedin.com/in/your-name" autocomplete="url"></div>
       <div class="col-12"><label for="fb-email">Email <span class="fb-hint">(private, never shown on the website)</span></label><input id="fb-email" name="email" type="email" required autocomplete="email"></div>
       <div class="col-12"><label for="fb-msg">Your feedback</label><textarea id="fb-msg" name="message" rows="6" maxlength="600" required placeholder="What was it like working with us? What did we deliver?"></textarea><div class="fb-count"><span id="fb-n">0</span> / 600</div></div>
       <div class="col-12 hp"><label for="fb-web">Leave this empty</label><input id="fb-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
       <input type="hidden" name="ts" id="fb-ts" value="">
-      <div class="col-12"><label class="fb-check"><input type="checkbox" name="consent" value="1" required> <span>I agree that A.T International may publish my name, role and feedback on its website after review. I understand my email stays private. See the <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span></label></div>
+      <div class="col-12"><label class="fb-check"><input type="checkbox" name="consent" value="1" required> <span>I agree that A.T International may publish my name, role, LinkedIn link (if I add one) and feedback on its website after review. I understand my email stays private. See the <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span></label></div>
       <div class="col-12"><button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Send feedback</span></button><div id="fb-status" class="cf-status" role="status" aria-live="polite"></div></div>
     </div>
   </form>
@@ -72,6 +73,7 @@
     if(name.length<2){s.textContent='Please enter your name.';s.className='cf-status err';return;}
     if(!/^\S+@\S+\.\S+$/.test(email)){s.textContent='Please enter a valid email address.';s.className='cf-status err';return;}
     if(msg.length<20){s.textContent='Please write at least a couple of sentences.';s.className='cf-status err';return;}
+    var li=f.linkedin.value.trim();if(li&&!/linkedin\.com\/\S+/i.test(li)){s.textContent='Please enter a valid LinkedIn profile link, or leave it empty.';s.className='cf-status err';return;}
     if(!f.consent.checked){s.textContent='Please tick the box to let us publish your feedback.';s.className='cf-status err';return;}
     s.textContent='Sending...';s.className='cf-status';
     fetch('feedback-submit.php',{method:'POST',body:new FormData(f)}).then(function(r){return r.json().catch(function(){return {ok:false};});}).then(function(j){

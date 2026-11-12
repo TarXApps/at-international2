@@ -216,3 +216,7 @@
 .rv-table{width:100%;border-collapse:collapse;font-size:16px}
 .rv-table th,.rv-table td{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.14);text-align:left;color:#E4E6FF}
 .rv-table th{color:#fff;font-weight:600}
+
+.li-link{color:#CBD0FF;text-decoration:underline;text-underline-offset:3px}
+.li-link:hover{color:#fff}
+.li-link i{margin-right:5px}

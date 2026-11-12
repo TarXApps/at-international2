@@ -42,6 +42,17 @@ function at_review_token($id) { return at_sign('review:' . $id); }
 function at_list_token() { return at_sign('list'); }
 function at_review_url($id) { return AT_SITE_URL . '/feedback-review.php?id=' . rawurlencode($id) . '&t=' . at_review_token($id); }
 function at_list_url() { return AT_SITE_URL . '/feedback-review.php?list=1&t=' . at_list_token(); }
+/** Clean a LinkedIn profile link. Returns '' if empty, false if it is not a linkedin.com address. */
+function at_linkedin($v) {
+    $v = trim((string)$v);
+    if ($v === '') return '';
+    if (!preg_match('~^https?://~i', $v)) $v = 'https://' . $v;
+    $p = parse_url($v);
+    if (!$p || empty($p['host']) || !preg_match('~(^|\.)linkedin\.com$~i', $p['host'])) return false;
+    $path = rtrim($p['path'] ?? '', '/');
+    if ($path === '' || !preg_match('~^/[A-Za-z0-9_%./\-]+$~', $path) || strlen($path) > 150) return false;
+    return 'https://' . strtolower($p['host']) . $path;
+}
 function at_h($s) { return htmlspecialchars((string)$s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); }
 
 /** Read every submission (newest last). */
@@ -90,11 +101,12 @@ function at_approved($max = 12) {
     return array_slice($out, 0, $max);
 }
 
-function at_card($name, $role, $text) {
+function at_card($name, $role, $text, $link = '') {
     echo '<div class="country-block-three col-lg-6 col-md-6 col-sm-12"><div class="inner-box"><div class="content">'
        . '<div class="quote-mark"><i class="fa fa-quote-left"></i></div>'
        . '<div class="text">&ldquo;' . at_h($text) . '&rdquo;</div>'
        . '<h4 class="title who">' . at_h($name) . '</h4>'
+       . ($link !== '' ? '<div class="role"><a class="li-link" href="' . at_h($link) . '" target="_blank" rel="noopener nofollow"><i class="fab fa-linkedin"></i> LinkedIn profile</a></div>' : '')
        . ($role !== '' ? '<div class="role">' . at_h($role) . '</div>' : '')
        . '</div></div></div>';
 }
@@ -106,8 +118,8 @@ function at_card($name, $role, $text) {
 function at_render_testimonials(array $static, $max = 6) {
     $cards = [];
     try {
-        foreach (at_approved($max) as $s) $cards[] = [$s['name'], $s['role'] ?? '', $s['message']];
+        foreach (at_approved($max) as $s) $cards[] = [$s['name'], $s['role'] ?? '', $s['message'], $s['linkedin'] ?? ''];
     } catch (Throwable $e) { $cards = []; }
     foreach ($static as $t) $cards[] = $t;
-    foreach (array_slice($cards, 0, $max) as $c) at_card($c[0], $c[1], $c[2]);
+    foreach (array_slice($cards, 0, $max) as $c) at_card($c[0], $c[1], $c[2], $c[3] ?? '');
 }

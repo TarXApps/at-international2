@@ -47,19 +47,21 @@ $notice = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $action = (string)($_POST['action'] ?? '');
     $clean = function ($v) { return trim(preg_replace('/\s+/', ' ', strip_tags((string)$v))); };
-    $name = $clean($_POST['name'] ?? ''); $role = $clean($_POST['role'] ?? '');
+    $name = $clean($_POST['name'] ?? ''); $role = $clean($_POST['role'] ?? ''); $li = at_linkedin($clean($_POST['linkedin'] ?? ''));
     $msg  = trim(strip_tags((string)($_POST['message'] ?? '')));
     $msg  = trim(preg_replace("/[ \t]+/", ' ', preg_replace("/\r\n?/", "\n", $msg)));
     $mb   = function ($s) { return function_exists('mb_strlen') ? mb_strlen($s, 'UTF-8') : strlen($s); };
     if (!in_array($action, ['save', 'approve', 'reject', 'unpublish'], true)) {
         $notice = 'Unknown action.';
+    } elseif ($li === false) {
+        $notice = 'The LinkedIn link must be a linkedin.com profile address, or empty.';
     } elseif ($name === '' || $msg === '' || $mb($msg) > 600 || $mb($name) > 80 || $mb($role) > 100) {
         $notice = 'Please check the name and text (feedback up to 600 characters).';
     } else {
-        at_mutate(function ($all) use ($id, $action, $name, $role, $msg, &$notice) {
+        at_mutate(function ($all) use ($id, $action, $name, $role, $li, $msg, &$notice) {
             foreach ($all as &$s) {
                 if ($s['id'] !== $id) continue;
-                $s['name'] = $name; $s['role'] = $role; $s['message'] = $msg;
+                $s['name'] = $name; $s['role'] = $role; $s['linkedin'] = $li; $s['message'] = $msg;
                 if ($action === 'approve')   { $s['status'] = 'approved'; $s['approved_at'] = date('c'); $notice = 'Approved. It is now showing in the Clients section of the website.'; }
                 if ($action === 'reject')    { $s['status'] = 'rejected'; $s['approved_at'] = ''; $notice = 'Rejected. It will not appear on the website.'; }
                 if ($action === 'unpublish') { $s['status'] = 'pending';  $s['approved_at'] = ''; $notice = 'Removed from the website. It is back to waiting for review.'; }
@@ -89,6 +91,7 @@ $inner = '<div class="eyebrow">Private</div><h1>Review feedback</h1>'
     . '<input type="hidden" name="id" value="' . at_h($id) . '"><input type="hidden" name="t" value="' . at_h($t) . '">'
     . '<label for="rv-name">Name (shown on the website)</label><input id="rv-name" name="name" type="text" maxlength="80" value="' . at_h($item['name']) . '">'
     . '<label for="rv-role">Role and company (shown on the website, optional)</label><input id="rv-role" name="role" type="text" maxlength="100" value="' . at_h($item['role'] ?? '') . '">'
+    . '<label for="rv-li">LinkedIn profile link (shown on the website, optional)</label><input id="rv-li" name="linkedin" type="text" maxlength="200" value="' . at_h($item['linkedin'] ?? '') . '">'
     . '<label for="rv-msg">Feedback (you can fix typos before publishing)</label><textarea id="rv-msg" name="message" rows="6" maxlength="600">' . at_h($item['message']) . '</textarea>'
     . '<div class="rv-actions">' . $btns . '</div></form>'
     . '<p style="margin-top:26px"><a href="' . at_h(at_list_url()) . '">See all feedback</a></p>';
