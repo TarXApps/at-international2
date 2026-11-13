@@ -62,10 +62,10 @@
 .home-details {
   margin-right: 50px;
 }
-.home-details h2, .home-details .text {
+.home-details h1, .home-details h2, .home-details .text {
   color: #ffffff;
 }
-.home-details h2 {
+.home-details h1, .home-details h2 {
   line-height: 65px;
 }
 .home-details .text {
