@@ -1,0 +1,91 @@
+/* Hero motion graphics (A.T International)
+   Layers: background (blobs, grid, particles) + headline/tagline/copy + illustration (plate, gear, hand) + floating chips.
+   Headline font: "Mortend" (drop the font files into /fonts/mortend/, see the @font-face below). Falls back to Outfit. */
+@font-face{font-family:"Mortend";font-weight:700;font-style:normal;font-display:swap;src:url("../fonts/mortend/mortend.woff2") format("woff2"),url("../fonts/mortend/mortend.otf") format("opentype"),url("../fonts/mortend/mortend.ttf") format("truetype")}
+
+.home_layout_app_4.hero-motion{padding:150px 0 96px;overflow:hidden;position:relative}
+.hero-motion .auto-container{position:relative;z-index:2;max-width:1260px}
+.hero-motion .hm-bg{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}
+
+/* background */
+.hm-blob{position:absolute;border-radius:50%;filter:blur(26px);will-change:transform;opacity:.55}
+.hm-b1{width:620px;height:620px;left:-180px;top:-140px;background:radial-gradient(circle,#6B5BFF 0%,rgba(107,91,255,0) 66%);animation:hmDrift 19s ease-in-out infinite alternate}
+.hm-b2{width:560px;height:560px;right:-120px;top:30px;background:radial-gradient(circle,#2FE6D0 0%,rgba(47,230,208,0) 64%);opacity:.28;animation:hmDrift 23s ease-in-out -6s infinite alternate-reverse}
+.hm-b3{width:640px;height:640px;left:34%;bottom:-300px;background:radial-gradient(circle,#3537E2 0%,rgba(53,55,226,0) 66%);animation:hmDrift 27s ease-in-out -11s infinite alternate}
+@keyframes hmDrift{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(60px,40px,0) scale(1.12)}}
+.hm-gridlines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:58px 58px;-webkit-mask-image:radial-gradient(ellipse 70% 70% at 68% 42%,#000 0,transparent 75%);mask-image:radial-gradient(ellipse 70% 70% at 68% 42%,#000 0,transparent 75%)}
+.hm-particles{position:absolute;inset:0;width:100%;height:100%}
+
+/* layout */
+.hm-layout{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:40px;align-items:center}
+.hm-copy{position:relative;z-index:3}
+
+/* headline in Mortend */
+.hm-title{font-family:"Mortend","Outfit",sans-serif;font-weight:700;font-size:clamp(32px,4vw,58px);line-height:1.14;letter-spacing:-.005em;color:#fff;margin:0}
+.hm-title .hm-l{display:block}
+.hm-title .hm-line{padding-bottom:.08em}
+.hm-title .hm-gw,.hm-title .hm-grad{background:linear-gradient(100deg,#9EA2FF 0%,#49FBDF 40%,#9EA2FF 80%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:hmShine 5.5s linear infinite}
+.hm-title .hm-grad .hm-gw{background-clip:text}
+@keyframes hmShine{0%{background-position:0% 50%}100%{background-position:-220% 50%}}
+
+/* tagline */
+.hm-tag{display:flex;flex-wrap:wrap;gap:.2em .55em;margin:22px 0 0;font-family:"Mortend","Outfit",sans-serif;font-weight:700;font-size:clamp(20px,2.1vw,30px);letter-spacing:.03em;color:#B7BBFF}
+.hm-tag span{position:relative;display:inline-block;transition:color .35s,text-shadow .35s}
+.hm-tag span::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:3px;border-radius:3px;background:linear-gradient(90deg,#49FBDF,#8E93FF);transform:scaleX(0);transform-origin:left center;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.hm-tag span.on{color:#fff;text-shadow:0 0 26px rgba(73,251,223,.7)}
+.hm-tag span.on::after{transform:scaleX(1)}
+
+.hm-sub{max-width:540px;margin:20px 0 0;font-size:18px;line-height:1.65;color:#DCDFFF}
+.hm-copy .hero-actions{justify-content:flex-start;margin-top:30px}
+.hm-copy .hero-actions .theme-btn{will-change:transform}
+
+/* stage */
+.hm-stage{position:relative;perspective:1300px;z-index:2}
+.hm-float,.hm-tilt{position:relative}
+.hm-tilt{transform-style:preserve-3d;will-change:transform}
+.hm-art{position:relative;width:100%;max-width:640px;margin:0 0 0 auto;aspect-ratio:1100/889}
+.hm-art>img,.hm-art>svg{position:absolute;display:block;pointer-events:none}
+.hm-art>img{left:0;top:0;width:100%;height:100%}
+.hm-art>.hm-gear{left:0;top:0;width:100%;height:100%}
+.hm-art>.hm-rings{left:-10%;top:-12.37%;width:120%;height:124.7%;overflow:visible}
+.hm-plate{filter:drop-shadow(0 30px 50px rgba(5,0,40,.45))}
+.hm-pulse{position:absolute;left:38.4%;top:46.8%;width:34%;aspect-ratio:1;margin:-17% 0 0 -17%;border-radius:50%;border:2px solid rgba(73,251,223,.85);box-shadow:0 0 24px rgba(73,251,223,.5);opacity:0;pointer-events:none}
+.hm-sparks{position:absolute;inset:0;pointer-events:none}
+.hm-sparks span{position:absolute;left:38.4%;top:46.8%;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:#49FBDF;box-shadow:0 0 12px 2px rgba(73,251,223,.8);opacity:0}
+
+/* floating chips (Code / Commerce / Craft) */
+.hm-chip{position:absolute;z-index:4;display:flex;align-items:center;gap:9px;padding:10px 15px 10px 12px;border-radius:15px;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.26);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 14px 34px rgba(8,2,50,.35);font:600 14px/1 "Outfit","DM Sans",sans-serif;letter-spacing:.03em;transition:border-color .35s,box-shadow .35s,background .35s}
+.hm-chip b{color:#fff;font-weight:600;font-size:inherit}
+.hm-chip svg{width:20px;height:20px;color:#49FBDF;flex:0 0 20px}
+.hm-chip.on{border-color:rgba(73,251,223,.9);background:rgba(73,251,223,.16);box-shadow:0 0 0 4px rgba(73,251,223,.14),0 14px 34px rgba(8,2,50,.35)}
+.hm-c0{left:-3%;top:9%}
+.hm-c1{left:3%;bottom:5%}
+.hm-c2{right:1%;top:4%}
+
+/* hidden until the intro timeline takes over (class is added in <head>, removed by hero-motion.js) */
+.hm-pre .hm-title,.hm-pre .hm-tag span,.hm-pre .hm-sub,.hm-pre .hm-copy .hero-actions .theme-btn,.hm-pre .hm-art,.hm-pre .hm-chip{visibility:hidden}
+
+/* tablet and phone */
+@media (max-width:991px){
+  .home_layout_app_4.hero-motion{padding:128px 0 72px}
+  .hm-layout{grid-template-columns:1fr;gap:34px;text-align:center}
+  .hm-tag{justify-content:center}
+  .hm-sub{margin-left:auto;margin-right:auto}
+  .hm-copy .hero-actions{justify-content:center}
+  .hm-art{margin:0 auto;max-width:520px}
+  .hm-title{font-size:clamp(32px,7.4vw,52px)}
+}
+@media (max-width:575px){
+  .home_layout_app_4.hero-motion{padding:108px 0 60px}
+  .hm-sub{font-size:16.5px}
+  .hm-chip{padding:8px 11px 8px 9px;font-size:12px;gap:6px;border-radius:12px}
+  .hm-chip svg{width:16px;height:16px;flex-basis:16px}
+  .hm-c0{left:0;top:4%}.hm-c1{left:2%;bottom:2%}.hm-c2{right:0;top:0}
+  .hm-blob{filter:blur(16px)}
+}
+
+/* reduced motion: show the finished design, no movement */
+@media (prefers-reduced-motion:reduce){
+  .hm-blob,.hm-title .hm-gw,.hm-title .hm-grad{animation:none}
+  .hm-particles{display:none}
+}

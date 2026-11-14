@@ -23,6 +23,8 @@ $at_has_testimonials = count($at_testimonials) > 0;
 
 <link href="css/responsive.css" rel="stylesheet">
 <link href="css/brand.css" rel="stylesheet">
+<link href="css/hero-motion.css" rel="stylesheet">
+<script>if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("hm-pre");setTimeout(function(){document.documentElement.classList.remove("hm-pre")},6000)}</script>
 <meta name="description" content="A.T International builds custom software, mobile apps, cloud solutions, websites and digital marketing for businesses worldwide. Based in Srinagar, Kashmir, India.">
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -133,26 +135,55 @@ $at_has_testimonials = count($at_testimonials) > 0;
 
 
 
-<section id="home" class="home_layout_app_4">
-	<div class="each-object-round"></div>
+<section id="home" class="home_layout_app_4 hero-motion">
+	<div class="hm-bg" aria-hidden="true">
+		<span class="hm-blob hm-b1"></span><span class="hm-blob hm-b2"></span><span class="hm-blob hm-b3"></span>
+		<span class="hm-gridlines"></span>
+		<canvas class="hm-particles"></canvas>
+	</div>
 	<div class="auto-container">
-		<div class="row align-items-center"><div class="home_main col-12">
-			<div class="home-details text-center">
-				<div class="hero-badge">Trusted by 10+ Companies Worldwide</div>
-				<h1>Innovating Digital Solutions <br> for Your Business</h1>
-				<div class="text">Code. Commerce. Craft.</div>
-				<p class="hero-sub">We turn your ideas into digital products, from custom software and mobile apps to cloud solutions and digital marketing.</p>
+		<div class="hm-layout">
+			<div class="hm-copy">
+				<h1 class="hm-title"><span class="hm-l">Innovating</span> <span class="hm-l"><span class="hm-grad">Digital Solutions</span></span> <span class="hm-l">for Your Business</span></h1>
+				<p class="hm-tag"><span data-i="0">Code.</span> <span data-i="1">Commerce.</span> <span data-i="2">Craft.</span></p>
+				<p class="hm-sub">We turn your ideas into digital products, from custom software and mobile apps to cloud solutions and digital marketing.</p>
 				<div class="hero-actions">
 					<a href="#enquiry" class="theme-btn btn-style-one"><span class="btn-title">Get Free Consultation</span></a>
 					<a href="#services" class="theme-btn btn-style-two hvr-light"><span class="btn-title">Our Services</span></a>
 				</div>
 			</div>
-		</div></div>
+			<div class="hm-stage">
+				<div class="hm-float"><div class="hm-tilt">
+					<div class="hm-art" role="img" aria-label="Illustration of a robotic hand turning a gear inside a workflow cycle">
+						<svg class="hm-rings" viewBox="-110 -110 1320 1109" aria-hidden="true">
+							<circle class="hm-ring r1" cx="422.5" cy="422.5" r="470" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.5" stroke-dasharray="3 14" stroke-linecap="round"/>
+							<circle class="hm-ring r2" cx="422.5" cy="422.5" r="535" fill="none" stroke="rgba(142,147,255,.28)" stroke-width="1.5"/>
+							<g class="hm-orbiter"><circle cx="957.5" cy="422.5" r="9" fill="#49FBDF"/><circle cx="957.5" cy="422.5" r="22" fill="#49FBDF" opacity=".18"/></g>
+							<g class="hm-orbiter2"><circle cx="422.5" cy="-112.5" r="6" fill="#8E93FF"/></g>
+						</svg>
+						<img class="hm-plate" src="images/hero/plate.webp" width="1100" height="889" alt="" decoding="async">
+						<svg class="hm-gear" viewBox="0 0 1100 889" aria-hidden="true">
+							<defs>
+								<linearGradient id="hmBody" gradientUnits="userSpaceOnUse" x1="0" y1="336" x2="0" y2="523"><stop offset="0" stop-color="#49FBDF"/><stop offset="1" stop-color="#444CE1"/></linearGradient>
+								<linearGradient id="hmRing" gradientUnits="userSpaceOnUse" x1="0" y1="355.5" x2="0" y2="476"><stop offset="0" stop-color="#4453E1"/><stop offset="1" stop-color="#49FBDF"/></linearGradient>
+								<radialGradient id="hmGlow"><stop offset="0" stop-color="#49FBDF" stop-opacity=".55"/><stop offset="1" stop-color="#49FBDF" stop-opacity="0"/></radialGradient>
+								<mask id="hmGearMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1100" height="889"><g class="gear-rot"><path fill="#fff" fill-rule="evenodd" d="M414.0 308.4C412.7 308.7 411.4 309.1 410.2 309.6C409.0 310.1 407.7 310.6 406.7 311.3C405.6 312.1 404.7 313.1 404.0 314.2C403.2 315.3 402.7 316.5 402.2 317.7C401.6 318.9 401.2 320.2 400.8 321.4C400.3 322.6 399.9 323.9 399.3 325.1C398.8 326.3 398.1 327.4 397.4 328.6C396.7 329.7 395.9 330.7 395.1 331.8C394.4 332.9 393.7 334.0 392.8 335.0C392.0 336.0 391.1 337.0 390.1 337.9C389.2 338.8 388.2 339.7 387.1 340.5C386.1 341.3 385.1 342.1 384.0 342.9C382.9 343.6 381.8 344.3 380.6 345.0C379.5 345.7 378.4 346.5 377.2 347.0C376.0 347.6 374.8 348.1 373.5 348.5C372.3 348.8 370.9 348.9 369.7 349.2C368.4 349.6 367.1 350.1 365.9 350.4C364.6 350.7 363.3 350.9 362.0 351.0C360.7 351.1 359.3 351.0 358.0 351.0C356.7 351.0 355.3 351.0 354.0 350.8C352.7 350.7 351.5 350.3 350.2 350.0C348.9 349.8 347.6 349.4 346.3 349.2C345.0 349.1 343.6 348.9 342.3 349.1C341.1 349.4 339.9 350.0 338.7 350.6C337.5 351.2 336.3 351.8 335.3 352.7C334.4 353.6 333.6 354.7 332.9 355.7C332.1 356.8 331.5 358.0 330.8 359.1C330.1 360.2 329.5 361.4 328.8 362.5C328.2 363.7 327.6 364.9 327.0 366.0C326.4 367.2 325.7 368.3 325.2 369.6C324.7 370.8 324.3 372.1 324.1 373.4C323.9 374.7 323.9 376.0 324.0 377.3C324.2 378.6 324.4 379.9 324.9 381.1C325.4 382.3 326.3 383.4 327.0 384.5C327.8 385.6 328.7 386.5 329.6 387.6C330.4 388.6 331.3 389.6 332.1 390.6C332.8 391.7 333.5 392.8 334.2 394.0C334.8 395.1 335.4 396.3 336.0 397.5C336.5 398.7 337.0 399.9 337.4 401.2C337.8 402.4 338.3 403.7 338.6 405.0C339.0 406.2 339.3 407.5 339.6 408.8C339.8 410.1 339.9 411.4 340.0 412.7C340.1 414.0 340.0 415.4 340.0 416.7C340.0 418.0 340.1 419.3 340.0 420.7C339.8 422.0 339.5 423.3 339.3 424.5C339.0 425.8 338.8 427.2 338.5 428.4C338.2 429.7 337.7 431.0 337.3 432.2C336.8 433.4 336.4 434.7 335.8 435.9C335.2 437.1 334.5 438.2 333.8 439.3C333.1 440.4 332.2 441.4 331.4 442.5C330.6 443.5 329.8 444.5 329.0 445.6C328.2 446.6 327.3 447.6 326.6 448.7C325.9 449.9 325.2 451.0 324.7 452.2C324.3 453.5 324.1 454.8 324.0 456.1C323.9 457.4 323.8 458.8 324.1 460.1C324.3 461.3 324.9 462.5 325.5 463.7C326.0 464.9 326.7 466.1 327.4 467.2C328.0 468.4 328.7 469.5 329.4 470.6C330.1 471.8 330.7 472.9 331.4 474.0C332.1 475.2 332.8 476.3 333.6 477.3C334.4 478.4 335.2 479.4 336.2 480.2C337.3 481.0 338.5 481.6 339.7 482.2C340.9 482.7 342.1 483.5 343.3 483.6C344.6 483.7 345.9 483.2 347.2 483.0C348.5 482.7 349.8 482.3 351.1 482.2C352.4 482.0 353.8 482.0 355.1 482.0C356.4 482.0 357.7 482.0 359.0 482.0C360.4 482.0 361.7 482.0 363.0 482.0C364.3 482.0 365.7 482.0 367.0 482.2C368.2 482.4 369.5 482.9 370.8 483.3C372.0 483.6 373.3 484.1 374.5 484.5C375.8 485.0 377.0 485.4 378.2 486.0C379.4 486.5 380.5 487.3 381.6 488.0C382.8 488.6 384.0 489.2 385.1 489.9C386.2 490.6 387.2 491.5 388.2 492.4C389.2 493.2 390.1 494.1 391.1 495.1C392.0 496.0 392.9 497.0 393.7 498.0C394.6 499.0 395.5 500.0 396.2 501.1C396.9 502.2 397.5 503.4 398.1 504.6C398.7 505.7 399.4 506.8 400.0 508.0C400.5 509.3 400.8 510.5 401.3 511.8C401.7 513.0 402.1 514.3 402.6 515.5C403.2 516.7 403.8 517.9 404.7 518.9C405.5 519.9 406.5 520.8 407.6 521.5C408.7 522.2 409.9 522.8 411.2 523.2C412.4 523.7 413.7 523.9 415.0 524.0C416.3 524.1 417.7 524.0 419.0 524.0C420.3 524.0 421.6 524.0 422.9 524.0C424.3 524.0 425.6 524.0 426.9 524.0C428.2 524.0 429.6 524.0 430.9 523.8C432.2 523.7 433.5 523.4 434.7 522.9C435.9 522.4 437.1 521.7 438.1 521.0C439.2 520.2 440.2 519.3 441.0 518.2C441.8 517.2 442.4 516.0 442.9 514.8C443.4 513.6 443.7 512.3 444.1 511.0C444.6 509.8 445.0 508.5 445.6 507.4C446.2 506.2 447.0 505.1 447.6 504.0C448.3 502.8 448.9 501.7 449.7 500.5C450.4 499.4 451.1 498.3 451.9 497.3C452.8 496.3 453.7 495.3 454.7 494.5C455.7 493.6 456.8 492.8 457.8 492.0C458.8 491.2 459.8 490.3 460.9 489.5C462.0 488.8 463.1 488.1 464.3 487.5C465.4 486.8 466.5 486.0 467.7 485.4C468.9 484.9 470.1 484.5 471.4 484.0C472.6 483.6 473.9 483.3 475.2 482.9C476.4 482.6 477.7 482.2 479.0 482.1C480.3 481.9 481.7 481.9 483.0 481.8C484.3 481.7 485.6 481.4 486.9 481.4C488.2 481.4 489.5 481.9 490.8 482.0C492.1 482.1 493.5 481.9 494.8 482.0C496.1 482.2 497.3 482.6 498.7 482.8C500.0 482.9 501.3 483.1 502.6 482.9C503.9 482.7 505.1 482.1 506.3 481.6C507.5 481.0 508.7 480.3 509.7 479.4C510.6 478.6 511.4 477.5 512.1 476.4C512.9 475.3 513.5 474.1 514.2 473.0C514.9 471.9 515.6 470.8 516.2 469.6C516.9 468.5 517.6 467.3 518.2 466.1C518.8 465.0 519.3 463.8 519.8 462.5C520.3 461.3 520.9 460.1 521.1 458.8C521.3 457.5 521.2 456.1 521.0 454.8C520.9 453.5 520.6 452.2 520.1 451.0C519.7 449.8 518.8 448.7 518.1 447.6C517.3 446.6 516.4 445.6 515.6 444.6C514.7 443.6 513.8 442.6 513.0 441.5C512.3 440.5 511.6 439.3 510.9 438.2C510.2 437.0 509.6 435.9 509.1 434.7C508.6 433.5 508.1 432.2 507.7 431.0C507.2 429.7 506.8 428.5 506.4 427.2C506.1 425.9 505.7 424.7 505.5 423.4C505.2 422.1 505.1 420.8 505.0 419.4C504.9 418.1 505.0 416.8 505.0 415.5C505.0 414.2 504.9 412.8 505.0 411.5C505.2 410.2 505.5 408.9 505.7 407.6C506.0 406.3 506.4 405.1 506.7 403.8C507.0 402.5 507.3 401.2 507.7 400.0C508.2 398.7 508.8 397.6 509.4 396.4C510.0 395.2 510.6 394.0 511.3 392.9C512.0 391.8 512.7 390.7 513.5 389.6C514.3 388.5 515.2 387.6 516.0 386.5C516.8 385.5 517.6 384.5 518.3 383.3C519.0 382.2 519.8 381.1 520.2 379.9C520.7 378.7 520.9 377.3 521.0 376.0C521.1 374.7 521.1 373.3 520.8 372.1C520.6 370.8 520.0 369.6 519.4 368.4C518.9 367.2 518.3 366.0 517.6 364.8C517.0 363.7 516.3 362.5 515.6 361.4C514.9 360.3 514.2 359.2 513.4 358.1C512.7 357.0 512.2 355.8 511.4 354.7C510.6 353.7 509.6 352.7 508.6 351.9C507.6 351.1 506.4 350.4 505.2 349.9C504.0 349.4 502.7 349.2 501.4 349.0C500.1 348.9 498.7 349.0 497.4 349.1C496.1 349.3 494.8 349.7 493.6 350.0C492.3 350.3 491.0 350.7 489.7 350.9C488.4 351.0 487.1 351.0 485.7 351.0C484.4 351.0 483.1 351.0 481.8 350.8C480.5 350.6 479.2 350.2 477.9 349.9C476.7 349.6 475.4 349.3 474.1 348.9C472.8 348.6 471.5 348.2 470.3 347.8C469.1 347.3 467.8 346.9 466.6 346.3C465.4 345.7 464.3 345.0 463.2 344.3C462.1 343.6 460.9 343.0 459.8 342.2C458.8 341.4 457.7 340.6 456.8 339.7C455.8 338.8 454.9 337.9 453.9 336.9C453.0 336.0 452.0 335.1 451.2 334.1C450.3 333.1 449.5 332.1 448.8 331.0C448.0 329.9 447.4 328.7 446.7 327.6C446.1 326.4 445.5 325.2 445.0 324.0C444.5 322.8 444.0 321.6 443.5 320.3C443.0 319.1 442.6 317.9 442.0 316.7C441.5 315.5 441.0 314.2 440.2 313.2C439.4 312.2 438.3 311.3 437.2 310.6C436.1 309.9 434.9 309.3 433.6 308.9C432.4 308.4 431.1 308.2 429.8 308.0C428.5 307.9 427.2 308.0 425.9 308.0C424.5 308.0 423.2 308.0 421.9 308.0C420.6 308.0 419.2 307.9 417.9 308.0C416.6 308.1 415.3 308.1 414.0 308.4ZM467.5 416.2A45 45 0 1 0 377.5 416.2A45 45 0 1 0 467.5 416.2Z"/></g></mask>
+							</defs>
+							<circle class="hm-glow" cx="422.5" cy="416.2" r="175" fill="url(#hmGlow)" opacity="0"/>
+							<rect width="1100" height="889" fill="url(#hmBody)" mask="url(#hmGearMask)"/>
+							<circle cx="422.5" cy="416.2" r="50.5" fill="none" stroke="url(#hmRing)" stroke-width="21"/>
+						</svg>
+						<span class="hm-pulse" aria-hidden="true"></span>
+						<img class="hm-hand" src="images/hero/hand.webp" width="1100" height="889" alt="" decoding="async">
+						<div class="hm-sparks" aria-hidden="true"></div>
+					</div>
+					<div class="hm-chip hm-c0" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><b>Code</b></div>
+					<div class="hm-chip hm-c1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1.5 1.5 0 0 0 1.5 1.2h8.1a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6"/></svg><b>Commerce</b></div>
+					<div class="hm-chip hm-c2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18zM2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/></svg><b>Craft</b></div>
+				</div></div>
+			</div>
+		</div>
 	</div>
-</section><section class="client_top_laptop-4">
-	<div class="auto-container"><div class="row"><div class="image-column col-12 wow slideInUp"><div class="inner-column">
-		<figure class="illus illus-hero mb-0"><img src="images/illus-hero.png" alt="Illustration of a robotic hand holding a gear inside a workflow cycle"></figure>
-	</div></div></div></div>
 </section><section class="stats-strip"><div class="auto-container"><div class="stats-grid">
 	<div class="stat"><b>20+</b><span>Projects delivered</span></div>
 	<div class="stat"><b>4+</b><span>Years of experience</span></div>
@@ -315,6 +346,9 @@ $at_has_testimonials = count($at_testimonials) > 0;
 <script src="js/swiper.min.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/script.js"></script>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/SplitText.min.js"></script>
+<script src="js/hero-motion.js"></script>
 <script>
 (function(){
   var f=document.getElementById('contact-form'),s=document.getElementById('cf-status');
