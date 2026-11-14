@@ -1,7 +1,8 @@
 /* Hero motion graphics (A.T International)
    Layers: background (blobs, grid, particles) + headline/tagline/copy + illustration (plate, gear, hand) + floating chips.
-   Headline font: "Mortend" (drop the font files into /fonts/mortend/, see the @font-face below). Falls back to Outfit. */
-@font-face{font-family:"Mortend";font-weight:700;font-style:normal;font-display:swap;src:url("../fonts/mortend/mortend.woff2") format("woff2"),url("../fonts/mortend/mortend.otf") format("opentype"),url("../fonts/mortend/mortend.ttf") format("truetype")}
+   Headline font: "Mortend" (files in /fonts/mortend/). Falls back to Outfit. */
+@font-face{font-family:"Mortend";font-weight:700;font-style:normal;font-display:swap;src:url("../fonts/mortend/mortend-bold.woff2") format("woff2")}
+@font-face{font-family:"Mortend";font-weight:800;font-style:normal;font-display:swap;src:url("../fonts/mortend/mortend-extrabold.woff2") format("woff2")}
 
 .home_layout_app_4.hero-motion{padding:150px 0 96px;overflow:hidden;position:relative}
 .hero-motion .auto-container{position:relative;z-index:2;max-width:1260px}
@@ -21,7 +22,7 @@
 .hm-copy{position:relative;z-index:3}
 
 /* headline in Mortend */
-.hm-title{font-family:"Mortend","Outfit",sans-serif;font-weight:700;font-size:clamp(32px,4vw,58px);line-height:1.14;letter-spacing:-.005em;color:#fff;margin:0}
+.hm-title{font-family:"Mortend","Outfit",sans-serif;font-weight:700;font-size:clamp(24px,2.95vw,43px);line-height:1.22;letter-spacing:0;color:#fff;margin:0}
 .hm-title .hm-l{display:block}
 .hm-title .hm-line{padding-bottom:.08em}
 .hm-title .hm-gw,.hm-title .hm-grad{background:linear-gradient(100deg,#9EA2FF 0%,#49FBDF 40%,#9EA2FF 80%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:hmShine 5.5s linear infinite}
@@ -29,7 +30,7 @@
 @keyframes hmShine{0%{background-position:0% 50%}100%{background-position:-220% 50%}}
 
 /* tagline */
-.hm-tag{display:flex;flex-wrap:wrap;gap:.2em .55em;margin:22px 0 0;font-family:"Mortend","Outfit",sans-serif;font-weight:700;font-size:clamp(17px,1.85vw,26px);letter-spacing:.07em;text-transform:uppercase;color:#B7BBFF}
+.hm-tag{display:flex;flex-wrap:wrap;gap:.2em .55em;margin:22px 0 0;font-family:"Mortend","Outfit",sans-serif;font-weight:700;font-size:clamp(14px,1.4vw,20px);letter-spacing:.06em;text-transform:uppercase;color:#B7BBFF}
 .hm-tag span{position:relative;display:inline-block;transition:color .35s,text-shadow .35s}
 .hm-tag span::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:3px;border-radius:3px;background:linear-gradient(90deg,#49FBDF,#8E93FF);transform:scaleX(0);transform-origin:left center;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .hm-tag span.on{color:#fff;text-shadow:0 0 26px rgba(73,251,223,.7)}
@@ -73,7 +74,7 @@
   .hm-sub{margin-left:auto;margin-right:auto}
   .hm-copy .hero-actions{justify-content:center}
   .hm-art{margin:0 auto;max-width:520px}
-  .hm-title{font-size:clamp(32px,7.4vw,52px)}
+  .hm-title{font-size:clamp(22px,5.4vw,40px)}
 }
 @media (max-width:575px){
   .home_layout_app_4.hero-motion{padding:108px 0 60px}
