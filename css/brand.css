@@ -225,3 +225,8 @@
 /* hero headline is now an H1: keep it looking exactly like the old H2 */
 .home_layout_app_4 .home-details h1{font-size:48px;line-height:1.2;color:#fff;font-weight:700}
 @media (max-width:575px){.home_layout_app_4 .home-details h1{font-size:34px}}
+
+/* tighter gap between stats strip and Who we are */
+.stats-strip{padding-bottom:20px}
+.about-section-app-4{padding-top:40px}
+@media (max-width:767px){.stats-strip{padding-bottom:10px}.about-section-app-4{padding-top:30px}}
