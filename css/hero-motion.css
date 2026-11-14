@@ -22,7 +22,7 @@
 .hm-copy{position:relative;z-index:3}
 
 /* headline in Mortend */
-.hm-title{font-family:"Mortend","Outfit",sans-serif;font-weight:700;font-size:clamp(24px,2.95vw,43px);line-height:1.22;letter-spacing:0;color:#fff;margin:0}
+.hm-title{font-family:"Mortend","Outfit",sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(24px,2.95vw,43px);line-height:1.22;letter-spacing:0;color:#fff;margin:0}
 .hm-title .hm-l{display:block}
 .hm-title .hm-line{padding-bottom:.08em}
 .hm-title .hm-gw,.hm-title .hm-grad{background:linear-gradient(100deg,#9EA2FF 0%,#49FBDF 40%,#9EA2FF 80%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:hmShine 5.5s linear infinite}
