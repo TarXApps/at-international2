@@ -29,7 +29,7 @@
 @keyframes hmShine{0%{background-position:0% 50%}100%{background-position:-220% 50%}}
 
 /* tagline */
-.hm-tag{display:flex;flex-wrap:wrap;gap:.2em .55em;margin:22px 0 0;font-family:"Mortend","Outfit",sans-serif;font-weight:700;font-size:clamp(20px,2.1vw,30px);letter-spacing:.03em;color:#B7BBFF}
+.hm-tag{display:flex;flex-wrap:wrap;gap:.2em .55em;margin:22px 0 0;font-family:"Mortend","Outfit",sans-serif;font-weight:700;font-size:clamp(17px,1.85vw,26px);letter-spacing:.07em;text-transform:uppercase;color:#B7BBFF}
 .hm-tag span{position:relative;display:inline-block;transition:color .35s,text-shadow .35s}
 .hm-tag span::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:3px;border-radius:3px;background:linear-gradient(90deg,#49FBDF,#8E93FF);transform:scaleX(0);transform-origin:left center;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .hm-tag span.on{color:#fff;text-shadow:0 0 26px rgba(73,251,223,.7)}
@@ -54,7 +54,7 @@
 .hm-sparks span{position:absolute;left:38.4%;top:46.8%;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:#49FBDF;box-shadow:0 0 12px 2px rgba(73,251,223,.8);opacity:0}
 
 /* floating chips (Code / Commerce / Craft) */
-.hm-chip{position:absolute;z-index:4;display:flex;align-items:center;gap:9px;padding:10px 15px 10px 12px;border-radius:15px;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.26);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 14px 34px rgba(8,2,50,.35);font:600 14px/1 "Outfit","DM Sans",sans-serif;letter-spacing:.03em;transition:border-color .35s,box-shadow .35s,background .35s}
+.hm-chip{position:absolute;z-index:4;display:flex;align-items:center;gap:9px;padding:10px 15px 10px 12px;border-radius:15px;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.26);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 14px 34px rgba(8,2,50,.35);font:600 13px/1 "Outfit","DM Sans",sans-serif;letter-spacing:.1em;text-transform:uppercase;transition:border-color .35s,box-shadow .35s,background .35s}
 .hm-chip b{color:#fff;font-weight:600;font-size:inherit}
 .hm-chip svg{width:20px;height:20px;color:#49FBDF;flex:0 0 20px}
 .hm-chip.on{border-color:rgba(73,251,223,.9);background:rgba(73,251,223,.16);box-shadow:0 0 0 4px rgba(73,251,223,.14),0 14px 34px rgba(8,2,50,.35)}
@@ -78,7 +78,7 @@
 @media (max-width:575px){
   .home_layout_app_4.hero-motion{padding:108px 0 60px}
   .hm-sub{font-size:16.5px}
-  .hm-chip{padding:8px 11px 8px 9px;font-size:12px;gap:6px;border-radius:12px}
+  .hm-chip{padding:8px 11px 8px 9px;font-size:11px;gap:6px;border-radius:12px}
   .hm-chip svg{width:16px;height:16px;flex-basis:16px}
   .hm-c0{left:0;top:4%}.hm-c1{left:2%;bottom:2%}.hm-c2{right:0;top:0}
   .hm-blob{filter:blur(16px)}

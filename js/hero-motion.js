@@ -22,7 +22,7 @@
   var started = false;
 
   gsap.set(hand, { transformOrigin: gxp + ' ' + gyp });
-  gsap.set(gearRot, { svgOrigin: GX + ' ' + GY });
+  gsap.set(gearRot, { svgOrigin: GX + ' ' + GY, scale: 1.04, rotation: 30 });   // rest pose: a dip (not a tooth) sits under each fingertip
   gsap.set(plate, { transformOrigin: gxp + ' ' + gyp });
   gsap.set([orb1, orb2], { svgOrigin: '422.5 422.5' });
   gsap.set(r1, { svgOrigin: '422.5 422.5' });
@@ -45,15 +45,17 @@
 
   // ---- the turning loop: grip, twist (hand rolls, bolt turns), click, release, re-grip
   function buildTurning() {
+    // One grip = one move of the hand and one move of the bolt, together (the bolt advances one tooth, so the
+    // fingertips land in the next pair of dips every time).
     var t = gsap.timeline({ repeat: -1 });
-    t.to(hand, { scale: .992, duration: .22, ease: 'power1.inOut' })                                    // fingers close on the bolt
-     .to(hand, { rotation: 7.5, x: -3, y: -2, duration: .8, ease: 'power2.inOut' }, '>')               // wrist rolls
-     .to(gearRot, { rotation: '+=26', duration: .8, ease: 'power2.inOut' }, '<')                         // bolt turns with it
-     .add(function () { click(1); }, '>-.04')
-     .to(gearRot, { rotation: '+=3', duration: .35, ease: 'power2.out' }, '<')                           // small settle after the click
-     .to(hand, { rotation: 0, x: 5, y: 3, scale: 1, duration: .6, ease: 'power3.out' }, '>.1')          // fingers let go and slide back
-     .to(hand, { x: 0, y: 0, duration: .35, ease: 'sine.inOut' }, '>-.05')                              // and settle for the next grip
-     .to({}, { duration: .12 });
+    t.to(hand, { scale: .92, duration: .3, ease: 'power2.inOut' })                                       // fingertips press into the dips
+     .to(hand, { rotation: 12, duration: .9, ease: 'power2.inOut' }, '>.05')                              // wrist rolls...
+     .to(gearRot, { rotation: '+=60', duration: .9, ease: 'power2.inOut' }, '<')                           // ...and carries the bolt one tooth round
+     .add(function () { click(1); }, '>-.02')
+     .to(hand, { scale: 1.03, duration: .38, ease: 'power2.out' }, '>.12')                                // fingertips lift out of the dips
+     .to(hand, { rotation: 0, duration: .6, ease: 'power3.inOut' }, '<.04')                               // wrist rolls back
+     .to(hand, { scale: 1, duration: .25, ease: 'sine.inOut' }, '>-.1')
+     .to({}, { duration: .15 });
     return t;
   }
 
